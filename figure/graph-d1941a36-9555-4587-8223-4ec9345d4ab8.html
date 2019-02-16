@@ -1,0 +1,51 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="../lib/vis/dist/vis.js"></script>
+      <link href="../lib/vis/dist/vis.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+    <div id="d1941a36-9555-4587-8223-4ec9345d4ab8"></div>
+
+    <script type="text/javascript">
+      var nodes = [{"id": 81, "label": "Fandi3", "group": "Person", "title": "{'name': 'Fandi3', 'born': 'Mataram'}"}, {"id": 21, "label": "Piko", "group": "Person", "title": "{'name': 'Piko'}"}, {"id": 20, "label": "Fandi", "group": "Person", "title": "{'name': 'Fandi'}"}, {"id": 23, "label": "Piko", "group": "Person", "title": "{'name': 'Piko'}"}, {"id": 22, "label": "Fandi", "group": "Person", "title": "{'name': 'Fandi'}"}, {"id": 0, "label": "Fandi", "group": "Person", "title": "{'name': 'Fandi'}"}, {"id": 60, "label": "", "group": "Movie", "title": "{'title': 'Avenger'}"}, {"id": 40, "label": "Fandi2", "group": "Person", "title": "{'name': 'Fandi2', 'born': 'Mataram'}"}, {"id": 1, "label": "Piko", "group": "Person", "title": "{'name': 'Piko'}"}, {"id": 80, "label": "", "group": "Movie", "title": "{'title': 'Avenger2'}"}];
+      var edges = [{"from": 21, "to": 20, "label": "FRIEND {}"}, {"from": 23, "to": 22, "label": "FRIEND {}"}, {"from": 1, "to": 0, "label": "FRIEND {}"}];
+
+      var container = document.getElementById("d1941a36-9555-4587-8223-4ec9345d4ab8");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'dot',
+              size: 25,
+              font: {
+                  size: 14
+              }
+          },
+          edges: {
+              font: {
+                  size: 14,
+                  align: 'middle'
+              },
+              color: 'gray',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 0.5}
+              },
+              smooth: {enabled: false}
+          },
+          physics: {
+              enabled: false
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    
