@@ -15,10 +15,12 @@ Feel free to use and share this github page
 
 ## Installation
 To install all requirement that satisfy the environment that you need to run jupyter notebook is by run this command on your terminal:
+
 ``` pip install -r requirements.txt ```
 
 ## Running Notebook
 To run the notebook, first you need to change directory to this repo and run this following command:
+
 ``` jupyter notebook ```
 
 
