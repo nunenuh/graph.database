@@ -1,0 +1,51 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="../lib/vis/dist/vis.js"></script>
+      <link href="../lib/vis/dist/vis.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+    <div id="a39b4dec-045b-40e5-a569-b752ab80b0fb"></div>
+
+    <script type="text/javascript">
+      var nodes = [{"id": 0, "label": "Machine Learning Engineer", "group": "Job", "title": "{'name': 'Machine Learning Engineer'}"}, {"id": 20, "label": "Fandi", "group": "Person", "title": "{'name': 'Fandi'}"}, {"id": 22, "label": "Eby", "group": "Person", "title": "{'name': 'Eby'}"}, {"id": 23, "label": "Danil", "group": "Person", "title": "{'name': 'Danil'}"}, {"id": 21, "label": "Piko", "group": "Person", "title": "{'name': 'Piko'}"}, {"id": 1, "label": "Software Engineer", "group": "Job", "title": "{'name': 'Software Engineer'}"}];
+      var edges = [{"from": 20, "to": 0, "label": "WORK_AS "}, {"from": 20, "to": 22, "label": "LECTURE "}, {"from": 20, "to": 23, "label": "LECTURE "}, {"from": 21, "to": 1, "label": "WORK_AS "}, {"from": 21, "to": 20, "label": "FRIEND "}, {"from": 22, "to": 1, "label": "WORK_AS "}, {"from": 22, "to": 23, "label": "FRIEND "}, {"from": 23, "to": 1, "label": "WORK_AS "}];
+
+      var container = document.getElementById("a39b4dec-045b-40e5-a569-b752ab80b0fb");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'dot',
+              size: 25,
+              font: {
+                  size: 14
+              }
+          },
+          edges: {
+              font: {
+                  size: 14,
+                  align: 'middle'
+              },
+              color: 'gray',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 0.5}
+              },
+              smooth: {enabled: false}
+          },
+          physics: {
+              enabled: false
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    
