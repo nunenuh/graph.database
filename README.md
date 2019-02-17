@@ -14,12 +14,16 @@ Feel free to use and share this github page
 2. Running Notebook
 
 ## Installation
-Under Construction
+To install all requirement that satisfy the environment that you need to run jupyter notebook is by run this command on your terminal:
+``` pip install -r requirements.txt ```
 
 ## Running Notebook
-Under Construction
+To run the notebook, first you need to change directory to this repo and run this following command:
+``` jupyter notebook ```
 
 
 ## Source of Material
+* https://neo4j.com
 * https://github.com/nicolewhite/neo4j-jupyter
-* py2neo.org
+* http://py2neo.org
+
